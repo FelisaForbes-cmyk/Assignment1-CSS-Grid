@@ -61,6 +61,7 @@ h1 {
   grid-column: 2 / span 2;
   grid-row: 3;
   background: #ddd;
+  border-color: #000
 }
 
 .tall-right {
@@ -72,6 +73,7 @@ h1 {
   grid-column: 1 / span 3;
   grid-row: 4;
 }
+
 
 
 
