@@ -42,7 +42,7 @@ h1 {
   display: block;
 }
 
-.small1 {
+.top-left {
   grid-column: 1;
   grid-row: 1;
 }
@@ -52,7 +52,7 @@ h1 {
   grid-row: 1 / span 2;
 }
 
-.small2 {
+.mid-left {
   grid-column: 1;
   grid-row: 2 / span 2;
 }
@@ -72,6 +72,7 @@ h1 {
   grid-column: 1 / span 3;
   grid-row: 4;
 }
+
 
 
 
