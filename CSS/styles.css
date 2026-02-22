@@ -75,6 +75,130 @@ h1 {
   grid-row: 4;
 }
 
+/* 1 Page Site Styles */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7f4;
+    color: #2f4f4f;
+}
+
+/* Grid Container */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "menu main"
+        "footer footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 120px 1fr 80px;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    grid-area: header;
+    background: linear-gradient(to right, #2e8b57, #3cb371);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* MENU */
+nav {
+    grid-area: menu;
+    background-color: #d4edda;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2e8b57;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #14532d;
+}
+
+/* Main Content */
+main {
+    grid-area: main;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.text-content {
+    grid-column: 1 / 3;
+}
+
+.text-content h2 {
+    margin-bottom: 10px;
+}
+
+.image {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background-color: #2e8b57;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "menu"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .text-content {
+        grid-column: 1;
+    }
+}
 
 
 
