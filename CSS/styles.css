@@ -26,6 +26,8 @@ h1 {
     display: block;
 }
 
+/* Complex Grid Styles */
+
 .gallery2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -82,12 +84,6 @@ h1 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f7f4;
-    color: #2f4f4f;
 }
 
 /* Grid Container */
@@ -199,6 +195,7 @@ footer {
         grid-column: 1;
     }
 }
+
 
 
 
